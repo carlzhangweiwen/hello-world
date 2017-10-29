@@ -1,0 +1,20 @@
+# 数据库 及 Redis 配置
+spring:
+#  redis:
+#    host: localhost
+#  使用 MySQL 不用做任何修改
+  datasource:
+    url: jdbc:mysql://localhost:3306/autumnsinger?useUnicode=true&characterEncoding=UTF-8
+#    driver-class-name: org.mariadb.jdbc.Driver
+    driver-class-name: com.mysql.jdbc.Driver
+    username: autumnsinger
+    password: 123456
+    sql-script-encoding: utf-8
+    hikari:
+      max-lifetime: 1765000
+      maximum-pool-size: 10
+
+# Mybatis 配置
+mybatis:
+  mapperLocations: classpath:mybatis/mapper/*.xml
+  typeAliasesPackage: com.autumnsinger.dal.model
