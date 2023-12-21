@@ -1,0 +1,6 @@
+- 项目编译工具：Gradle
+- 开发工具： Idea
+- 开发语言： 建议java17以上
+- ui组件：openjfx (org.openjfx.javafxplugin)
+- 打包工具: jpackage (org.beryx.jlink)
+- 如果打包出现错误，可以安装wix(3.1以上) + dotnetfx(3.5以上) 试试看
